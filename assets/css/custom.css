@@ -7,6 +7,7 @@ body {
 
 .wrapper {
   position: relative;
+  min-height: 100vh;
 }
 
 .nav-link {
@@ -15,6 +16,7 @@ body {
   top: 2rem;
   right: 2rem;
   font-size: 1.25rem;
+  z-index: 80;
 }
 
 .nav-link > span {
@@ -53,6 +55,7 @@ body {
   position: fixed;
   top: 5em;
   right: 0;
+  z-index: 80;
 }
 
 .menu-main li {
@@ -77,5 +80,22 @@ body {
 
 .menu .is-active > a {
   background: #A0A0A0;
+}
+
+.section-hero {
+  min-height: 53em;
+  background-image: radial-gradient(39.57% 66.46% at 54.52% 52.04%, #706D6D 0%, #313030 100%);
+  position: relative;
+}
+
+.section-divider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+}
+
+.section-divider svg {
+  display: block;
 }
 /*# sourceMappingURL=custom.css.map */
