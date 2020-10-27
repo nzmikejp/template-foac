@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;600&display=swap');
+
+$dark-grey: #313030;
+$med-grey: #A0A0A0;
+$light-grey: #F1F1F1;
+$white: #FFFFFF;
+$red-accent: #E10000;
+
+$headline-font: 'DM Serif Display', serif;
+$body-font: 'Montserrat', sans-serif;
+
+$font-bold: 600;
+$font-light: 400;
+
+body {
+    font-family: $body-font;
+    color: $dark-grey;
+    font-size: 1em;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.25rem;
+
+    >span{
+        transform: translateY(0);
+        display: inline-block;
+        transition: transform ease 0.3s;
+    }
+
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 6px;
+        right: -5px;
+        width: 5px;
+        height: 5px;
+        border-radius: 2.5px;
+        background-color: $red-accent;
+        transition: ease 0.3s all;
+    }
+
+    &:hover {
+        > span {
+            transform: translateY(-0.5rem);
+        }
+
+        &:after {
+            width: 120%;
+        }
+    }
+}
+
+.menu-main {
+    position: fixed;
+    top: 5em;
+    right: 0;
+
+    li {
+        margin-bottom: 0.2rem;
+    }
+
+    a {
+        font-size: 1.06em;
+        text-transform: uppercase;
+        background-color: $red-accent;
+        border-radius: 2em 0px 0px 2em;
+        color: $white;
+        padding: 1rem 1.5rem;
+        display: inline-block;
+        transition: ease 0.3s all;
+
+        &:hover {
+            background-color: darken($red-accent, 10%);
+        }
+    }
+}
+
+.menu .is-active > a {
+    background: $med-grey;
+}
