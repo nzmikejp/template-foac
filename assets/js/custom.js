@@ -57,7 +57,27 @@ $(function(){
             delay: 8000,
         }
     })
-      
+
+    //--- Mixitup ---//
+    $(function(){
+        $('#Container').mixItUp({
+            animation: {
+                easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)'
+            }
+        });
+    });
+    
+    $('.taxonomy-item').on('click', function(){
+        $('.taxonomy-item').removeClass('is-active');
+        $(this).addClass('is-active')
+    })
+
+
+    //--- AOS ---//
+    AOS.init({
+        once: true,
+    });
+
 
 
 })

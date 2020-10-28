@@ -78,6 +78,7 @@ nav{
     transform: translateX(0);
 }
 
+
 .menu .is-active > a {
     background: $med-grey;
 }
@@ -261,6 +262,50 @@ nav{
     .upper-footer {
         background-color: $dark-grey;
         color: $white;
+
+        .cell-left {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-bottom: 0;
+                margin-left: 1em;
+                font-size: 0.8rem;
+            }
+
+            span {
+                font-weight: $font-bold;
+                margin-right: 1em;
+            }
+        }
+
+        .cell-right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .button-custom {
+                margin-bottom: 0;
+            }
+
+            .footer-social {
+                margin-left: 1em;
+
+                i {
+                    font-size: 1.5em;
+                    color: $med-grey;
+                    margin: 0 0.25rem;
+                }
+            }
+        }
+
+        .footer-logo {
+            width: 5em;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
     }
 
     .lower-footer {
@@ -296,8 +341,17 @@ nav{
     }
 
     .headline-center {
+        font-size: 3.7em;
         max-width: 60%;
         margin: 0 auto 2.5rem auto;
+    }
+
+    .tagline-hero {
+        font-size: 2.5em;
+    }
+
+    .lead {
+        font-size: 2.2em;
     }
 
     .foa-card {
@@ -323,19 +377,12 @@ nav{
         }
     }
 
-    .lead {
-        font-size: 2.2em;
-    }
+
+    //--- Sections ---//
 
     .section-divider-logo {
         transform: translate(-50%, 10%);
-    }
-
-
-
-    .tagline-hero {
-        font-size: 2.5em;
-    }
+    }  
     
     .section-hero {
         .hero-content-cell {
@@ -361,20 +408,21 @@ nav{
             }
         }
         
-    }
-
-    .headline-hero {
-        font-size: 6.9rem;
-
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            transform: none;
+        .headline-hero {
+            font-size: 6.9rem;
+    
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transform: none;
+            }
         }
+        
     }
-
+    
+    
     .img-cell {
         margin-bottom: 0;
         display: flex;
@@ -409,17 +457,21 @@ nav{
     
         .headline-center {
             padding-bottom: 0;
-            font-size: 2.8em;
+            font-size: 3.7em;
         }
     
         .lead {
             font-size: 1.9em;
         }
+
+        .social-icon a {
+            color: $med-grey;
+        }
     }
 
     .section-support {
         .headline-center {
-            font-size: 2.8em;
+            font-size: 3.7em;
         }
     
         .headline-center + p {

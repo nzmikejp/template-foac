@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/custom.css">
 
     <title>Friends of Animals Charaties</title>
@@ -36,14 +37,14 @@
                                 <div class="company-brand">
                                     <img src="./assets/img/logo2-1.png" alt="">
                                 </div>
-                                <h1 class="headline-hero">I’m one of the Lucky One’s</h1>
+                                <h1 class="headline-hero" data-aos="fade-up" data-aos-duration="1000">I’m one of the Lucky One’s</h1>
                                 <h2 class="tagline-hero">But so many aren’t</h2>
                                 <p class="h5">Help us to help the animals in neglect...</p>
                                 <a href="#" class="button button-custom">Donate now</a>
                             </div>
                         </div>
                         <div class="cell hero-img-cell medium-6">
-                            <img class="hero-img" src="./assets/img/dog-1-1.webp" alt="">
+                            <img class="hero-img" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" src="./assets/img/dog-1-1.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -57,12 +58,12 @@
                 <div class="grid-container">
                     <div class="grid-x grid-margin-x">
                         <div class="cell medium-6">
-                            <h3 class="headline">We help animals, and you can too.</h3>
+                            <h3 class="headline" data-aos="fade-up" data-aos-duration="500">We help animals, and you can too.</h3>
                             <p>
                                 Friends of Animal Charities was founded by a group of friends – all with a passion for helping animals – to assist local animal welfare organizations on the Kapiti Coast and beyond.
                             </p>
                         </div>
-                        <div class="cell img-cell medium-6">
+                        <div class="cell img-cell medium-6" data-aos="fade-right" data-aos-delay="300" data-aos-duration="750">
                             <img src="./assets/img/rooster-1-1.webp" alt="">
                         </div>
                         <div class="cell">
@@ -153,9 +154,9 @@
             </section>
             <section class="section section-help">
                 <div class="grid-container">
-                    <h3 class="headline-center">How can you help the neglected animals?</h3>
+                    <h3 class="headline-center" data-aos="fade-up" data-aos-duration="500">How can you help the neglected animals?</h3>
                     <div class="grid-x grid-margin-x card-wrap">
-                        <div class="cell medium-4 foa-card">
+                        <div class="cell medium-4 foa-card" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
                             <div class="card-img">
                                 <img src="./assets/img/help-1.png">
                             </div>
@@ -165,7 +166,7 @@
                             </div>
                             <a href="#" class="button button-custom">volunteer</a>
                         </div>
-                        <div class="cell medium-4 foa-card">
+                        <div class="cell medium-4 foa-card" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000">
                             <div class="card-img">
                                 <img src="./assets/img/help-1.png">
                             </div>
@@ -175,7 +176,7 @@
                             </div>
                             <a href="#" class="button button-custom">volunteer</a>
                         </div>
-                        <div class="cell medium-4 foa-card">
+                        <div class="cell medium-4 foa-card" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000">
                             <div class="card-img">
                                 <img src="./assets/img/help-1.png">
                             </div>
@@ -203,31 +204,79 @@
                         and keep yourself up to date will all the great work we are achieving
                     </p>
                     <div class="social-icon">
-                        <i class="fab fa-facebook"></i>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
             </section>
-            <section class="section section-support">
+            <section class="section section-support shadow-inset">
                 <div class="grid-container">
                     <div class="grid-x grid-margin-x">
                         <div class="cell">
-                            <h3 class="headline-center">Charities we have supported</h3>
+                            <h3 class="headline-center" data-aos="fade-up" data-aos-duration="500">Charities we have supported</h3>
                             <p class="text-center">
                                 Since 2014, we’ve donated over $100,000 to the following organisations
                             </p>
                         </div>
                         <div class="cell">
                             <ul class="menu taxonomy-menu align-center">
-                                <li class="taxonomy-item is-active"><a href="#">All</a></li>
-                                <li class="taxonomy-item"><a href="#">Dogs</a></li>
-                                <li class="taxonomy-item"><a href="#">Cats</a></li>
-                                <li class="taxonomy-item"><a href="#">Birds</a></li>
-                                <li class="taxonomy-item"><a href="#">Sheep/Goats</a></li>
-                                <li class="taxonomy-item"><a href="#">Horse</a></li>
+                                <li class="taxonomy-item is-active"><a class="filter" data-filter="all">All</a></li>
+                                <li class="taxonomy-item"><a class="filter" data-filter=".dogs">Dogs</a></li>
+                                <li class="taxonomy-item"><a class="filter" data-filter=".cats">Cats</a></li>
+                                <li class="taxonomy-item"><a class="filter" data-filter=".birds">Birds</a></li>
+                                <li class="taxonomy-item"><a class="filter" data-filter=".sheep-goats">Sheep/Goats</a></li>
+                                <li class="taxonomy-item"><a class="filter" data-filter=".horses">Horses</a></li>
                             </ul>
                         </div>
-                        <div class="cell">
-                            logo's here
+                        <div class="cell charities-cell" id="Container">
+                            <div class="mix dogs">
+                                <img src="./assets/img/charities/ARANZ2.png" alt="">
+                            </div>
+                            <div class="mix dogs cats birds">
+                                <img src="./assets/img/charities/care-vets-150x86.png" alt="">
+                            </div>
+                            <div class="mix dogs">
+                                <img src="./assets/img/charities/greyhounds-as-pets2.png" alt="">
+                            </div>
+                            <div class="mix horses">
+                                <img src="./assets/img/charities/huha2-150x150.png" alt="">
+                            </div>
+                            <div class="mix cats">
+                                <img src="./assets/img/charities/kitten-inn-140x150.png" alt="">
+                            </div>
+                            <div class="mix cats">
+                                <img src="./assets/img/charities/kittycat-fixers2.png" alt="">
+                            </div>
+                            <div class="mix sheep-goats">
+                                <img src="./assets/img/charities/NZRDA-150x150.png" alt="">
+                            </div>
+                            <div class="mix horses sheep-goats">
+                                <img src="./assets/img/charities/outpawed-150x150.png" alt="">
+                            </div>
+                            <div class="mix birds">
+                                <img src="./assets/img/charities/project-jonah-150x150.png" alt="">
+                            </div>
+                            <div class="mix dogs cats birds horses">
+                                <img src="./assets/img/charities/SAFE-150x150.png" alt="">
+                            </div>
+                            <div class="mix dogs cats">
+                                <img src="./assets/img/charities/spca-horo-150x150.png" alt="">
+                            </div>
+                            <div class="mix dogs cats">
+                                <img src="./assets/img/charities/spca-wellington.png" alt="">
+                            </div>
+                            <div class="mix horses">
+                                <img src="./assets/img/charities/UHARS-150x150.png" alt="">
+                            </div>
+                            <div class="mix birds">
+                                <img src="./assets/img/charities/wellington-bird-trust-150x121.png" alt="">
+                            </div>
+                            <div class="mix sheep-goats">
+                                <img src="./assets/img/charities/wellington-rabbit-rescue2.png" alt="">
+                            </div>
+                            <div class="mix cats">
+                                <img src="./assets/img/charities/cats-protection-league-139x150.png" alt="">
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -240,9 +289,23 @@
             <footer class="footer">
                 <div class="upper-footer">
                     <div class="grid-container">
-                        <div class="grid-x grid-margin-x">
-                            <div class="cell medium-8">cat</div>
-                            <div class="cell medium-4">social</div>
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell cell-left auto">
+                                <div class="footer-img">
+                                    <img src="./assets/img/kitten-1.png" alt="">
+                                </div>
+                                <div class="footer-logo">
+                                    <img src="./assets/img/logo2-1.png" alt="">
+                                </div>
+                                <p><span>(04) 298 2506</span>11 Maclean Street Paraparaumu Beach</p>
+                            </div>
+                            <div class="cell cell-right medium-5 hide-for-small-only">
+                                <a href="#" class="button button-custom">donate now</a>
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -267,6 +330,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="./assets/js/anime.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/jquery.mixitup.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/custom.js"></script>
 </body>
 </html>

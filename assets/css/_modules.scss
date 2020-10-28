@@ -160,6 +160,8 @@
 
     .is-active > a {
         background-color: $red-accent!important;
+        border-radius: 0.3em;
+        font-weight: $font-bold;
     }
 
 }
@@ -175,5 +177,20 @@
 
     .swiper-pagination-bullet-active {
         background-color: $red-accent;
+    }
+}
+
+//--- Mixitup ---//
+#Container .mix{
+	display: none;
+}
+
+//--- Taxonomy Images ---//
+.charities-cell {
+    min-height: 35em;
+    img {
+        filter: grayscale(100%);
+        padding: 2em;
+        opacity: 0.6;
     }
 }
