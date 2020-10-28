@@ -7,7 +7,6 @@
     .headline {
         font-size: 3.7em;
         text-align: left;
-        border:thin green solid;
     
         &:after {
             left: 0;
@@ -85,7 +84,6 @@
 
     .headline-hero {
         font-size: 6.9rem;
-        border:thin blue solid;
         &:after {
             content: '';
             position: absolute;
