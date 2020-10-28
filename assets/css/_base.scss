@@ -1,0 +1,38 @@
+$dark-grey: #313030;
+$med-grey: #A0A0A0;
+$light-grey: #F1F1F1;
+$white: #FFFFFF;
+$red-accent: #E10000;
+
+$bg-gradient: radial-gradient(39.57% 66.46% at 54.52% 52.04%, #706D6D 0%, #313030 100%);
+
+$headline-font: 'DM Serif Display', serif;
+$body-font: 'Montserrat', sans-serif;
+
+$font-bold: 800;
+$font-light: 400;
+
+body {
+    font-family: $body-font;
+    color: $dark-grey;
+    font-size: 1em;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $body-font;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $body-font;
+}
+
+.section {
+    padding: 3em 0;
+    background-color: $white;
+    position: relative;
+}

@@ -48,11 +48,15 @@ $(function(){
     //--- Swiper ---//
     var mySwiper = new Swiper('.swiper-container', {
         loop: true,
+        grabCursor: true,
         pagination: {
           el: '.swiper-pagination',
           dynamicBullets: true,
         },
-      })
+        autoplay:{
+            delay: 8000,
+        }
+    })
       
 
 
