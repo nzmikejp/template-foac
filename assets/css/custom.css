@@ -426,6 +426,39 @@ nav:hover:after {
   padding-left: 0.5em;
 }
 
+.section-jumbotron {
+  background-color: #F1F1F1;
+  min-height: 35em;
+}
+
+.section-jumbotron .cell-content .lead {
+  text-transform: uppercase;
+  color: #313030;
+}
+
+.section-jumbotron .cell-content img {
+  display: block;
+  padding: 1.5em 0;
+}
+
+.section-jumbotron .cell-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.section-jumbotron .cell-img img {
+  display: block;
+  width: 80%;
+  border-radius: 0.5em;
+}
+
 .section-help {
   padding-top: 5em;
 }

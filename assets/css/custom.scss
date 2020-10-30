@@ -185,6 +185,38 @@ nav{
     }
 }
 
+//--- Section Jumbotron ---//
+.section-jumbotron {
+    background-color: $light-grey;
+    min-height: 35em;
+
+    .cell-content {
+        .lead {
+            text-transform: uppercase;
+            color: $dark-grey;
+        }
+
+        img {
+            display: block;
+            padding: 1.5em 0;
+        }
+    }
+
+    .cell-img {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        img {
+            display: block;
+            width: 80%;
+            border-radius: 0.5em;
+        }
+    }
+}
+
+
+
 //--- Section Help ---//
 .section-help {
     padding-top: 5em;
